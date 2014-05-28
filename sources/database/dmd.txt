@@ -1,0 +1,82 @@
++------------------+
+|	   GROUP       |
+|-------------------
+|	
+|	group_id
+|	description
+|	
+|
+
++------------------+
+|	   USERS       |
+|-------------------
+|	
+|	user_id
+|	username
+|	group_id
+|	firstname
+|	middlename
+|	lastname
+|	email
+|	password
+|	language
+|	last_login
+|	stamp
+
+
++------------------+
+|	   ROLE	       |
+|-------------------
+|	
+|	role_id
+|	description
+|	
+
++------------------+
+|	 PERMISSIONS   |
+|-------------------
+|	
+|	permission_id
+|	description
+|	group_id
+|
+
++------------------+
+| PERMISSIONS_TYPE |
+|-------------------
+|	
+|	permission_type_id
+|	read
+|	add
+|	edit
+|	delete
+|
+
+
++------------------+
+|	   MODULE	   |
+|-------------------
+|	
+|	module_id
+|	module_id
+|	methods (read, add, view, edit, )
+|	
+
+REQUEST will use AJAX???
+MODULE
+
+
+AJAX request
+{DATA will store in POST}
+
+post nalang!
+
+ADD {"module":"user", "method":"add", "data:{"user_id"}"}
+VIEW {"module":"blog", "method":"view", "data:{"user_id"}"}
+EDIT {"module":"user", "method":"delete", "data:{"user_id"}"}
+
+
+SEE if GROUP, OR USER has this permission
+
+
+
